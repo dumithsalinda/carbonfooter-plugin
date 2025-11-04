@@ -1,33 +1,26 @@
-# Copyright (C) 2025 Carbonfooter
+# Copyright (C) 2025 Pixel to Planet
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Carbonfooter 0.16.2\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/carbonfooter-plugin\n"
+"Project-Id-Version: Carbonfooter 0.19.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/carbonfooter\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-08-21T06:37:24+00:00\n"
+"POT-Creation-Date: 2025-11-04T07:03:00+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: carbonfooter\n"
 
 #. Plugin Name of the plugin
-#. Author of the plugin
 #: carbonfooter.php
+#: inc/class-admin-handler.php:101
 #: inc/class-admin-handler.php:102
-#: inc/class-admin-handler.php:103
 #: src/views/AdminPage.js:106
 #: src/views/ResultsPage.js:88
 msgid "Carbonfooter"
-msgstr ""
-
-#. Plugin URI of the plugin
-#. Author URI of the plugin
-#: carbonfooter.php
-msgid "https://carbonfooter.nl"
 msgstr ""
 
 #. Description of the plugin
@@ -35,291 +28,305 @@ msgstr ""
 msgid "Measure the carbon emissions of your website right inside WordPress"
 msgstr ""
 
+#. Author of the plugin
+#: carbonfooter.php
+msgid "Pixel to Planet"
+msgstr ""
+
+#. Author URI of the plugin
+#: carbonfooter.php
+msgid "https://carbonfooter.nl"
+msgstr ""
+
+#: inc/class-admin-handler.php:112
 #: inc/class-admin-handler.php:113
-#: inc/class-admin-handler.php:114
 msgid "Results"
 msgstr ""
 
+#: inc/class-admin-handler.php:121
 #: inc/class-admin-handler.php:122
-#: inc/class-admin-handler.php:123
-#: inc/class-admin-handler.php:333
+#: inc/class-admin-handler.php:402
 #: src/views/SettingsPage.js:338
 msgid "Settings"
 msgstr ""
 
-#: inc/class-admin-handler.php:248
+#: inc/class-admin-handler.php:318
 msgid "Measuring..."
 msgstr ""
 
-#: inc/class-admin-handler.php:249
+#: inc/class-admin-handler.php:319
 msgid "Measure again"
 msgstr ""
 
-#: inc/class-admin-handler.php:250
+#: inc/class-admin-handler.php:320
 msgid "Failed to measure emissions. Please try again."
 msgstr ""
 
-#: inc/class-admin-handler.php:269
+#: inc/class-admin-handler.php:338
 msgid "Carbon Emissions Overview"
 msgstr ""
 
-#: inc/class-admin-handler.php:282
+#: inc/class-admin-handler.php:353
 msgid "CO2 Emissions"
 msgstr ""
 
-#: inc/class-admin-handler.php:310
+#: inc/class-admin-handler.php:380
 msgid "No result yet"
 msgstr ""
 
-#: inc/class-admin-handler.php:314
+#: inc/class-admin-handler.php:384
 msgid "Visit page to get a result"
 msgstr ""
 
-#: inc/class-admin-handler.php:447
+#: inc/class-admin-handler.php:528
 msgid "The CarbonFooter plugin uses the carbonfooter.nl API service to calculate carbon emissions for your website pages."
 msgstr ""
 
-#: inc/class-admin-handler.php:448
+#: inc/class-admin-handler.php:529
 msgid "Data Shared with External Service"
 msgstr ""
 
-#: inc/class-admin-handler.php:449
+#: inc/class-admin-handler.php:530
 msgid "The following data is sent to carbonfooter.nl:"
 msgstr ""
 
-#: inc/class-admin-handler.php:450
+#: inc/class-admin-handler.php:531
 msgid "Page URLs for emissions calculation"
 msgstr ""
 
-#: inc/class-admin-handler.php:451
+#: inc/class-admin-handler.php:532
 msgid "Basic site information for analysis"
 msgstr ""
 
-#: inc/class-ajax-handler.php:118
+#: inc/class-ajax-handler.php:117
 msgid "Invalid post ID"
 msgstr ""
 
-#: inc/class-ajax-handler.php:135
+#: inc/class-ajax-handler.php:133
+msgid "A refresh is already running. Please wait a moment."
+msgstr ""
+
+#: inc/class-ajax-handler.php:157
 msgid "Failed to measure emissions"
 msgstr ""
 
-#: inc/class-ajax-handler.php:155
+#: inc/class-ajax-handler.php:180
 msgid "Failed to retrieve statistics"
 msgstr ""
 
-#: inc/class-ajax-handler.php:178
+#: inc/class-ajax-handler.php:202
 msgid "Failed to retrieve heaviest pages"
 msgstr ""
 
-#: inc/class-ajax-handler.php:201
+#: inc/class-ajax-handler.php:224
 msgid "Failed to retrieve untested pages"
 msgstr ""
 
-#: inc/class-ajax-handler.php:234
-#: inc/class-rest-api-handler.php:220
+#: inc/class-ajax-handler.php:256
+#: inc/class-rest-api-handler.php:225
 msgid "No valid settings provided"
 msgstr ""
 
 #. translators: %d is the number of deleted data entries.
-#: inc/class-ajax-handler.php:290
+#: inc/class-ajax-handler.php:315
 #, php-format
 msgid "Successfully cleared %d data entries and cache. All emissions data has been removed."
 msgstr ""
 
-#: inc/class-ajax-handler.php:298
+#: inc/class-ajax-handler.php:324
 msgid "Failed to clear data"
 msgstr ""
 
-#: inc/class-ajax-handler.php:334
+#: inc/class-ajax-handler.php:365
 msgid "No historical emissions data found to export."
 msgstr ""
 
 #. translators: %d is the number of exported posts.
-#: inc/class-ajax-handler.php:351
+#: inc/class-ajax-handler.php:386
 #, php-format
 msgid "Successfully exported %d posts with historical emissions data."
 msgstr ""
 
-#: inc/class-ajax-handler.php:357
+#: inc/class-ajax-handler.php:393
 msgid "Failed to export data"
 msgstr ""
 
-#: inc/class-ajax-handler.php:374
+#: inc/class-ajax-handler.php:409
 msgid "Invalid security token"
 msgstr ""
 
-#: inc/class-ajax-handler.php:378
+#: inc/class-ajax-handler.php:413
 msgid "Insufficient permissions"
 msgstr ""
 
-#: inc/class-emissions.php:67
+#: inc/class-emissions.php:65
 msgid "Data collection is disabled in privacy settings"
 msgstr ""
 
-#: inc/class-emissions.php:73
+#: inc/class-emissions.php:71
 msgid "Invalid post URL"
 msgstr ""
 
 #. translators: %s: API error message returned by the remote request
-#: inc/class-emissions.php:251
+#: inc/class-emissions.php:321
 #, php-format
 msgid "API Error: %s"
 msgstr ""
 
 #. translators: %s: HTTP response status code from the API
-#: inc/class-emissions.php:259
+#: inc/class-emissions.php:330
 #, php-format
 msgid "API Error: Status %s"
 msgstr ""
 
-#: inc/class-emissions.php:264
+#: inc/class-emissions.php:336
 msgid "Empty API response"
 msgstr ""
 
 #. translators: %s: JSON decoding error message
-#: inc/class-emissions.php:272
+#: inc/class-emissions.php:345
 #, php-format
 msgid "Invalid JSON response: %s"
 msgstr ""
 
-#: inc/class-emissions.php:276
+#: inc/class-emissions.php:350
 msgid "No emissions data found in response"
 msgstr ""
 
-#: inc/class-rest-api-handler.php:121
+#: inc/class-rest-api-handler.php:125
 msgid "Widget background color in hex format"
 msgstr ""
 
-#: inc/class-rest-api-handler.php:127
+#: inc/class-rest-api-handler.php:131
 msgid "Widget text color in hex format"
 msgstr ""
 
-#: inc/class-rest-api-handler.php:133
+#: inc/class-rest-api-handler.php:137
 msgid "Widget display setting (auto, manual, disabled)"
 msgstr ""
 
-#: inc/class-rest-api-handler.php:139
+#: inc/class-rest-api-handler.php:143
 msgid "Widget style (minimal, detailed, compact)"
 msgstr ""
 
-#: inc/class-rest-api-handler.php:173
+#: inc/class-rest-api-handler.php:179
 msgid "Failed to retrieve settings"
 msgstr ""
 
-#: inc/class-rest-api-handler.php:240
+#: inc/class-rest-api-handler.php:248
 msgid "Failed to save settings"
 msgstr ""
 
 #. translators: %s is the parameter name that has an invalid hex color.
-#: inc/class-rest-api-handler.php:298
+#: inc/class-rest-api-handler.php:303
 #, php-format
 msgid "Invalid hex color format for %s"
 msgstr ""
 
 #. translators: %s is a comma-separated list of allowed display settings.
-#: inc/class-rest-api-handler.php:331
+#: inc/class-rest-api-handler.php:335
 #, php-format
 msgid "Invalid display setting. Must be one of: %s"
 msgstr ""
 
 #. translators: %s is a comma-separated list of allowed widget styles.
-#: inc/class-rest-api-handler.php:364
+#: inc/class-rest-api-handler.php:367
 #, php-format
 msgid "Invalid widget style. Must be one of: %s"
 msgstr ""
 
-#: inc/class-shortcodes.php:387
-#: inc/class-shortcodes.php:429
+#: inc/class-shortcodes.php:412
+#: inc/class-shortcodes.php:458
 #: src/components/WidgetPreview.js:63
 #: src/components/WidgetPreview.js:145
 msgid "Carbonfooter.nl"
 msgstr ""
 
 #. translators: %1$s is the CO2 emissions HTML span, %2$s is the link HTML
-#: inc/class-shortcodes.php:393
+#: inc/class-shortcodes.php:419
 #, php-format
 msgid "This page produced %1$s per page view. Want to learn more? %2$s"
 msgstr ""
 
 #. translators: %1$s is the CO2 emissions HTML span, %2$s is the link HTML
-#: inc/class-shortcodes.php:434
+#: inc/class-shortcodes.php:464
 #, php-format
 msgid "This page produced %1$s per page view."
 msgstr ""
 
-#: inc/class-shortcodes.php:496
+#: inc/class-shortcodes.php:527
 #: src/components/OverviewGreenhost.js:5
 #: src/components/WidgetPreview.js:104
 msgid "Yes!"
 msgstr ""
 
-#: inc/class-shortcodes.php:496
+#: inc/class-shortcodes.php:527
 msgid "No!"
 msgstr ""
 
-#: inc/class-shortcodes.php:499
+#: inc/class-shortcodes.php:530
 #: src/components/WidgetPreview.js:105
 msgid "green energy"
 msgstr ""
 
-#: inc/class-shortcodes.php:499
+#: inc/class-shortcodes.php:530
 msgid "not green energy"
 msgstr ""
 
-#: inc/class-shortcodes.php:515
+#: inc/class-shortcodes.php:546
 #: src/components/WidgetPreview.js:121
 msgid "pagesize"
 msgstr ""
 
 #. translators: %s: Emissions value in grams of CO2
-#: inc/class-shortcodes.php:527
+#: inc/class-shortcodes.php:558
 #, php-format
 msgid "%s gram CO<sub>2</sub>"
 msgstr ""
 
-#: inc/class-shortcodes.php:531
+#: inc/class-shortcodes.php:562
 #: src/components/WidgetPreview.js:138
 msgid "per visit"
 msgstr ""
 
 #. translators: %s: amount in km car drive per year based on carbon emissions
-#: inc/class-shortcodes.php:549
+#: inc/class-shortcodes.php:581
 #, php-format
 msgid "= <strong>%s km.</strong></br>drive per year."
 msgstr ""
 
 #. translators: %s: trees needed to offset emissions per year
-#: inc/class-shortcodes.php:571
+#: inc/class-shortcodes.php:605
 #, php-format
 msgid "and <strong>%s trees</strong></br>offset per year."
 msgstr ""
 
-#: inc/class-shortcodes.php:586
+#: inc/class-shortcodes.php:621
 #: src/components/WidgetPreview.js:143
 msgid "Want to learn more?"
 msgstr ""
 
-#: views/dashboard-widget.php:27
+#: views/dashboard-widget.php:12
 msgid "Average Emissions"
 msgstr ""
 
-#: views/dashboard-widget.php:32
+#: views/dashboard-widget.php:17
 msgid "Pages Measured"
 msgstr ""
 
-#: views/dashboard-widget.php:38
+#: views/dashboard-widget.php:23
 msgid "Green Hosting"
 msgstr ""
 
-#: views/dashboard-widget.php:43
+#: views/dashboard-widget.php:28
 msgid "Non-Green Hosting"
 msgstr ""
 
-#: views/dashboard-widget.php:51
+#: views/dashboard-widget.php:36
 msgid "Top 10 Highest Emission Pages"
 msgstr ""
 
-#: views/dashboard-widget.php:67
+#: views/dashboard-widget.php:52
 msgid "View Details"
 msgstr ""
 
